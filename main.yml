@@ -1,0 +1,3 @@
+- hosts: Ansible_Web
+  tasks:
+  - include_tasks: hostname.yml
