@@ -4,4 +4,9 @@
     yum: 
       name: ntp
       state: latest
+
+  - name: start ntpd
+    service: 
+      name: ntpd
+      state: restarted
       
