@@ -5,8 +5,15 @@
       name: ntp
       state: latest
 
+  - name: Reconfigure time servers
+    lineinfile: 
+      path: /etc/ntp.conf
+      regexp: "^server [0,1,2,3].amazon.pool.ntp.org iburst$"
+      line: "server pool.ntp.org iburst"
+      state: present
+
   - name: start ntpd
     service: 
       name: ntpd
       state: restarted
-      
+
