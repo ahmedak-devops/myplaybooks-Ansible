@@ -17,6 +17,7 @@
       regexp: "^server 0.amazon.pool.ntp.org iburst$"
       line: "server pool.ntp.org iburst"
       state: present
+      backup: yes
 
   - name: start ntpd
     service: 
