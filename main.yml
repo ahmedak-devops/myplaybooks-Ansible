@@ -1,4 +1,5 @@
-- hosts: Ubuntu_DB
+- hosts: Centos_Web
   tasks:
-  -  debug: 
-       msg: "{{ ansible_os_family }}"
+  - include_tasks: "{{ ansible_os_family }}-ntpd.yml"
+
+

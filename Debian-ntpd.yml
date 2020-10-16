@@ -1,0 +1,23 @@
+- name: Install ntpd
+  apt: 
+    name: ntp
+    update_cache: yes
+
+- name: Delete unused time servers
+  lineinfile: 
+    path: /etc/ntp.conf
+    regexp: "^server [1,2,3].*iburst$"
+    state: absent
+    backup: yes
+  notify: restart ntpd
+
+- name: Reconfigure time servers
+  lineinfile: 
+    path: /etc/ntp.conf
+    regexp: "^server 0.*iburst$"
+    line: "server pool.ntp.org iburst"
+    state: present
+    backup: yes
+  notify: restart ntpd
+
+
