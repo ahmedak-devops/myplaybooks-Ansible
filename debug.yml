@@ -1,0 +1,7 @@
+- hosts: Centos_Web
+  vars:
+    name: "Class"
+  tasks:
+  - name: Debug
+    debug:
+      msg: "Hello {{ name }}"
