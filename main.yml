@@ -1,4 +1,4 @@
-- hosts: Centos_Web
+- hosts: Ubuntu_DB
   tasks:
   -  debug: 
        msg: "{{ ansible_os_family }}"
