@@ -1,8 +1,8 @@
-- hosts: 3.85.159.63
+- hosts: all
   tasks:
   - name: Restart all services
     shell: echo "Restarting all services"
-    notify: restart 3.85.159.63
+    notify: restart-all
 
   handlers:
   - name: Restart sshd
@@ -10,11 +10,11 @@
       name: sshd
       state: restarted
       enabled: yes
-    listen: "restart 3.85.159.63"
+    listen: "restart-all"
 
   - name: Restart ntpd
     service:
       name: ntpd
       state: restarted
       enabled: yes
-    listen: "restart 3.85.159.63"
+    listen: "restart-all"
