@@ -1,6 +1,6 @@
 - hosts: Centos_Web
-  vars:
-    name: "Welcome to Ahmeddevops"
+  vars_files:
+  - vars.yml 
   tasks:
   - name: Debug
     debug:
