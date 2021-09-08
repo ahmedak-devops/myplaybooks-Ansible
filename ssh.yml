@@ -4,5 +4,4 @@
     authorized_key:
       user: ec2-user
       state: present
-      key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJdDGRgFZj8XXCuOIuCuVG8Bu8pRNPggvruyGl1m2GxR9ebDmC6epeSEj8boQfE7Zd5peF7I8wFdz66UGq1+cSzrSQHx+TTFeMyUEB/ZjJ0V95WMllYtZHjmhEaU439SZdpQlddZRRrRXJ8UmpnF9r92vUI/uWZ6cBOnmAeqNIm//25k5ABLI0zB2U3X+jr3oPxiTym1g9tDv7OQTpcWUa4hfpBNkWfjdWXKfHiS6aYXFwx3V2R1fZSzxW10MjdFT5T1TaxI+CBOSR/WSPSZc4uUbKbOASRiSadfJH0aksUhMecv9ozGPOuZcaAG+uEuoHNVVnyZdqvSu9afsjHPXFP792jvvHRRssx81M/fJvGFMAlQZrCh7dCq/yGTIEqB7Dhu/t0M9FrsK72//KQgPPq0dutbAv/nucQtwQA/hGUf2HJChR6olY6BdZiiAbD0QtSI4QKwmFk6z29pOw559DHgREpPwlwKcBUymaME72cFlXH3VjyQM08ZSZTTuNhnc= ahmeddevops@Ahmedss-MBP
-"
+      key: "ssh-key"
